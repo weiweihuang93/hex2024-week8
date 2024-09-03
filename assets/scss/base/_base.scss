@@ -1,0 +1,283 @@
+i{
+    color: $primary;
+    display: inline-block;
+    font-size: $h5-font-size;
+    line-height: inherit;
+}
+
+.material-symbols-outlined{
+    line-height: 1;
+    vertical-align: middle;
+}
+
+img{
+    vertical-align: middle;
+}
+
+// 目前用於小尺寸 標題下方p文字
+.f-sm-inter{
+    @media (max-width: 992px) {
+        font-family: "Inter", sans-serif;
+        font-size: $h6-font-size; // 20
+        font-weight: $font-weight-medium; // 500
+        line-height: $line-height-base; // 1.5
+        letter-spacing: normal;
+    }
+}
+
+// 全尺寸
+.f-inter{
+    font-family: "Inter", sans-serif;
+    font-size: $h6-font-size; // 20
+    font-weight: $font-weight-medium; // 500
+    line-height: $line-height-base; // 1.5
+    letter-spacing: normal;
+}
+
+// letter-spacing 大小尺寸一樣
+.f-custom-letter-spacing{
+    letter-spacing: 0.02em;
+}
+
+//letter-spacing 大尺寸0.02 小尺寸normal
+.f-custom-lg-letter-spacing{
+    letter-spacing: 0.02em;
+
+    @media (max-width: 992px) {
+        letter-spacing: normal;
+    }
+}
+
+// 移除letter-spacing
+.f-custom-letter-spacing-n{
+    letter-spacing: normal;
+}
+
+// 目前用於xxx門課程 想學什麼區塊
+.f-custom-letter-spacing-sm{
+    letter-spacing: -0.01em;
+}
+
+// fw 大尺寸600 小尺寸700
+.f-custom-title-fw{
+    font-weight: 600;
+
+    @media (max-width: 992px) {
+        font-weight: 700;
+    }
+}
+
+// fw 大尺寸400 小尺寸500
+.f-custom-body-fw{
+    font-weight: 400;
+
+    @media (max-width: 992px) {
+        font-weight: 500;
+    }
+}
+
+// line-height 大尺寸1.2 小尺寸1.5
+.f-custom-title-lh{
+    line-height: 1.2;
+
+    @media (max-width: 992px) {
+        line-height: 1.5;
+    }
+}
+
+.f-lh-base {
+    line-height: $line-height-base;
+}
+
+/*Body 1 16px R*/
+// p標籤預設值400/1.5h
+p{
+    // line-height: 1.5;
+    letter-spacing: 0.02em; //0903更新-設為預設值
+}
+
+// Body 2 14px R
+.fs-small{
+    font-size: $font-size-sm; // 14
+}
+
+// 大尺寸16px 小尺寸14px
+.fs-lg-base{
+    @media (min-width: 992px) {
+        font-size: $font-size-base;
+    }
+}
+.fs-sm-small{
+    @media (max-width: 991px) {
+        font-size: $font-size-sm;
+    }
+}
+.fs-lg-small{
+    @media (min-width: 992px) {
+        font-size: $font-size-sm;
+    }
+}
+
+.fs-sm-xs{
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
+}
+
+.rounded-12{
+    border-radius: 12px;
+}
+.rounded-20{
+    border-radius: 20px;
+}
+
+.rounded-40{
+    border-radius: 40px;
+}
+
+.rounded-80{
+    border-radius: 80px;
+}
+
+.card-custom{
+    border: 0px;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0px 25px 50px -12px #0000001F;
+    overflow: hidden;
+}
+
+// 用途: 火熱募資課程btn垂直對齊
+// 用途: 想學什麼btn
+.custom-flex-center {
+    display: flex;
+    align-items: center;
+}
+
+// badge 14px/fw-600/padding-8,12/radius-100
+.badge{
+    line-height: $line-height-base;
+    letter-spacing: 0.02em;
+}
+.badge-tag-sm{
+    padding: 4px 12px;
+}
+
+// btn預設值400/1.5h/
+.btn {
+    letter-spacing: 0.02em;
+}
+
+// btn
+.w-sm-100{
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+}
+
+// 想學什麼嗎
+.w-xxl-100{
+    @media (min-width: 1400px) {
+        width: 100%;
+    }
+}
+
+// 搭配fs-small
+.btn-tag-sm{
+    padding: 4px 12px;
+    border: 0;
+    border-radius: 100px;
+    background-color: $neutral-200;
+    color: $neutral-400;
+}
+// 搭配fs-small
+.btn-tag-lg{
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 100px;
+    background-color: $neutral-200;
+    color: $neutral-400;
+}
+
+// 搭配fs-subtitle
+.btn-tag-fs-subtitle{
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 100px;
+    background-color: $neutral-200;
+    color: $neutral-400;
+}
+
+
+.h-800{
+    height: 800px;
+}
+
+//btn swiper分頁按鈕
+.btn-swiper-pagination{
+    display: inline-block;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: $white;
+    color: $primary;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+    line-height: 1;
+
+    position: absolute;
+    z-index: 10;
+
+    &:hover{
+        background: $primary;
+        color: $white;
+    }
+}
+.swiper-button-next-n{
+    // position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+.swiper-button-prev-n{
+    // position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//想學什麼 btn外框
+.btn-category{
+    width: 306px;
+    box-shadow: 0px 25px 50px -12px #0000001F;
+
+    @media (max-width: 992px) {
+        width: 272px;
+    }
+}
+
+// 用於文字標題裝飾
+.title-deco{
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 60px;
+        background: url(../images/deco/flower-1.png);
+        background-repeat: no-repeat;
+        top: -24px;
+        left: -24px;
+        z-index: -1;
+    }
+}
+
+// 用於區塊內的人物頭像 原始圖片不一致
+.profile{
+    width: 44px;
+    height: 44px;
+    border-radius: 68.75px;
+  
+  }
+
+.text-decoration-line-through{
+    color: #808080;
+}
