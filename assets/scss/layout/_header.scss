@@ -1,4 +1,39 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header{
+  .navbar{
+    box-shadow: 0px 2px 40px 0px #0068FF1A;
+    border-radius: 100px;
+
+    @media (max-width: 1200px) {
+      box-shadow: 0;
+      border-radius: 0px;
+    }
+  }
+  
+  .logo{
+    max-width: 200px;
+
+    @media (max-width: 992px) {
+      max-width: 125px;
+    }
+  }
+
+  .form-control{
+    width: 425px;
+    border: 1px solid $neutral-200;
+    border-radius: $border-radius-xl;
+    padding: 22px 80px 22px 40px;
+  }
+
+
+  .form-icon-position{
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+  }
+
+  .form-btn-position{
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+  }
 }
