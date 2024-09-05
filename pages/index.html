@@ -12,7 +12,7 @@
     <%- include('./layout/header'); -%>
 
     <section class="section-banner overflow-x-hidden">
-      <div class="container">
+      <div class="container d-none d-lg-block">
         <div class="position-relative">
           <div class="swiper BannerSwiper overflow-visible position-static">
             <div class="swiper-wrapper position-static">
@@ -29,18 +29,27 @@
                 <img class="w-100 h-800 rounded-80" src="../assets/images/hero-4.png" alt="hero-4">
               </div>
             </div>
-            <div class="swiper-button-next-n btn-swiper-pagination">
+            <div class="swiper-button-next-n btn-swiper-pagination d-none d-lg-block">
               <span class="material-symbols-outlined">
                 arrow_right_alt
               </span>
             </div>
-            <div class="swiper-button-prev-n btn-swiper-pagination">
+            <div class="swiper-button-prev-n btn-swiper-pagination d-none d-lg-block">
               <span class="material-symbols-outlined">
                 arrow_left_alt
               </span>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container-fluid d-block d-lg-none position-relative">
+        <img class="w-100" src="../assets/images/hero-2.png" alt="hero-2">
+        <button class="btn btn-primary w-100 rounded-0 me-4 custom-flex-center justify-content-center">探索感興趣的課程，今天立即上課
+          <span class="material-symbols-outlined">
+            arrow_forward
+          </span>
+        </button>
+        <button class="btn-banner border-0 position-absolute"><span class="me-2 badge badge-banner">熱銷課程 🔥</span>給成人的鋼琴入門課，一小時教你彈奏上手！</button>
       </div>
     </section>
 
