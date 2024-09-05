@@ -66,7 +66,7 @@ const TopsalesSwiper = new Swiper(".TopsalesSwiper", {
 });
 
 const TeacherSwiper = new Swiper(".TeacherSwiper", {
-  initialSlide: 1,
+  slidesPerView: 1,
   spaceBetween: 24,
   loop: true, // 啟用回到起點模式
 
