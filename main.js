@@ -3,12 +3,19 @@ import './assets/scss/all.scss';
 console.log("Hello world!");
 
 const BannerSwiper = new Swiper(".BannerSwiper", {
-    initialSlide: 1,
+    initialSlide: 1, // 起始值
     loop: true, // 啟用回到起點模式
     loopAdditionalSlides: 1,
     
     slidesPerView: 1,
-    spaceBetween: 24,
+
+    breakpoints: {
+      // 当窗口宽度 >= 320px 时
+      1200: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      },
+},
 
     navigation: {
         nextEl: ".swiper-button-next-n",
@@ -16,27 +23,6 @@ const BannerSwiper = new Swiper(".BannerSwiper", {
       },
   });
 
-// const CourseSwiper = new Swiper(".CourseSwiper", {
-//     loop: true,
-//     breakpoints: {
-//       320: {
-//         slidesPerView: 1,
-//         spaceBetween: 24,
-//         grid: {
-//           fill: 'column',
-//           rows: 1,
-//         },
-//       },
-//       992: {
-//         slidesPerView: 2,
-//         spaceBetween: 24,
-//         grid: {
-//           fill: 'column',
-//           rows: 2,
-//         },
-//       },
-//     }
-// });
 
 const TopsalesSwiper = new Swiper(".TopsalesSwiper", {
   slidesPerView: 1,

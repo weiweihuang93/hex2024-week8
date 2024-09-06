@@ -11,48 +11,43 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <section class="section-banner overflow-x-hidden">
-      <div class="container d-none d-lg-block">
-        <div class="position-relative">
-          <div class="swiper BannerSwiper overflow-visible position-static">
-            <div class="swiper-wrapper position-static">
-              <div class="swiper-slide">
-                <img class="w-100 h-800 rounded-80" src="../assets/images/hero-1.png" alt="hero-1">
-              </div>
-              <div class="swiper-slide">
-                <img class="w-100 h-800 rounded-80" src="../assets/images/hero-2.png" alt="hero-2">
-              </div>
-              <div class="swiper-slide">
-                <img class="w-100 h-800 rounded-80" src="../assets/images/hero-3.png" alt="hero-3">
-              </div>
-              <div class="swiper-slide">
-                <img class="w-100 h-800 rounded-80" src="../assets/images/hero-4.png" alt="hero-4">
-              </div>
+    <!-- banner -->
+    <section class="section-banner overflow-hidden">
+      <div class="container-fluid container-xl pb-11">
+        <div class="swiper BannerSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="banner-image" src="../assets/images/hero-1.png" alt="hero-1">
             </div>
-            <div class="swiper-button-next-n btn-swiper-pagination d-none d-lg-block">
-              <span class="material-symbols-outlined">
-                arrow_right_alt
-              </span>
+            <div class="swiper-slide">
+              <img class="banner-image" src="../assets/images/hero-2.png" alt="hero-2">
             </div>
-            <div class="swiper-button-prev-n btn-swiper-pagination d-none d-lg-block">
-              <span class="material-symbols-outlined">
-                arrow_left_alt
-              </span>
+            <div class="swiper-slide">
+              <img class="banner-image" src="../assets/images/hero-3.png" alt="hero-3">
             </div>
+            <div class="swiper-slide">
+              <img class="banner-image" src="../assets/images/hero-4.png" alt="hero-4">
+            </div>
+          </div>
+          <div class="swiper-button-next-n btn-swiper-pagination d-none d-xl-block">
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+          </div>
+          <div class="swiper-button-prev-n btn-swiper-pagination d-none d-xl-block">
+            <span class="material-symbols-outlined">
+              arrow_back
+            </span>
           </div>
         </div>
       </div>
-      <div class="container-fluid d-block d-lg-none position-relative">
-        <img class="w-100" src="../assets/images/hero-2.png" alt="hero-2">
-        <button class="btn btn-primary w-100 rounded-0 me-4 custom-flex-center justify-content-center">探索感興趣的課程，今天立即上課
-          <span class="material-symbols-outlined">
-            arrow_forward
-          </span>
-        </button>
-        <button class="btn-banner border-0 position-absolute"><span class="me-2 badge badge-banner">熱銷課程 🔥</span>給成人的鋼琴入門課，一小時教你彈奏上手！</button>
-      </div>
+      <!-- <span class="slide-title position-absolute">探索感興趣的課程，今天立即上課<span class="material-symbols-outlined">arrow_forward</span>
+      </span>
+      <span class="btn-banner border-0 position-absolute"><span class="me-2 badge badge-banner">熱銷課程 🔥</span>給成人的鋼琴入門課，一小時教你彈奏上手！</span> -->
+
     </section>
 
+    <!-- 火熱募資課程 -->
     <section class="section-Course">
       <div class="container py-11 py-lg-13">
         <div class="row">
@@ -171,193 +166,189 @@
     </section>
 
     <!-- 看看大家都買了什麼 -->
-    <section class="section-Topsales">
+    <section class="section-Topsales overflow-hidden">
       <div class="container py-11 py-lg-13">
         <div class="d-flex flex-column align-items-lg-center gap-2 mb-lg-8 mb-6">
           <h2 class="fs-1 fw-bold title-deco">看看大家<br class="d-block d-lg-none">都買了什麼</h2>
           <p class="f-inter text-neutral-400">熱銷課程一次看！✨</p>
         </div>
-        <div class="position-relative">
-          <div class="swiper TopsalesSwiper position-static">
-            <div class="swiper-wrapper position-static">
-              <div class="swiper-slide">
-                <div class="card card-custom mx-auto">
-                  <img src="../assets/images/course-4.png" class="card-img-top" alt="course-4">
-                  <div class="card-body p-0">
-                    <div class="d-flex flex-column p-4 gap-4">
-                      <h6 class="mb-4" style="height: 2rem">創意寫作工坊：從靈感到出版的全過程</h6>
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex gap-2 align-items-center">
-                          <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
-                          <p class="text-neutral-400">Kelly Hsu</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-end">
-                          <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
-                          <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
-                        </div>
+        <div class="swiper TopsalesSwiper overflow-visible">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-4.png" class="card-img-top" alt="course-4">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">創意寫作工坊：從靈感到出版的全過程</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
                       </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-400">
-                      <div class="d-flex flex-column align-items-start gap-2">
-                        <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
-                        <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
                       </div>
-                      <p class="d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined fs-small text-star">
-                          star
-                        </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating ">4.0 </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
-                      </p>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card-custom mx-auto">
-                  <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
-                  <div class="card-body p-0">
-                    <div class="d-flex flex-column p-4 gap-4">
-                      <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex gap-2 align-items-center">
-                          <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
-                          <p class="text-neutral-400">Kelly Hsu</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-end">
-                          <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
-                          <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
-                        </div>
-                      </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-400">
-                      <div class="d-flex flex-column align-items-start gap-2">
-                        <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
-                        <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
-                      </div>
-                      <p class="d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined fs-small text-star">
-                          star
-                        </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating ">4.0 </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card-custom mx-auto">
-                  <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
-                  <div class="card-body p-0">
-                    <div class="d-flex flex-column p-4 gap-4">
-                      <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex gap-2 align-items-center">
-                          <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
-                          <p class="text-neutral-400">Kelly Hsu</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-end">
-                          <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
-                          <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-400">
-                      <div class="d-flex flex-column align-items-start gap-2">
-                        <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
-                        <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
-                      </div>
-                      <p class="d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined fs-small text-star">
-                          star
-                        </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating ">4.0 </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card-custom mx-auto">
-                  <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
-                  <div class="card-body p-0">
-                    <div class="d-flex flex-column p-4 gap-4">
-                      <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex gap-2 align-items-center">
-                          <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
-                          <p class="text-neutral-400">Kelly Hsu</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-end">
-                          <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
-                          <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-400">
-                      <div class="d-flex flex-column align-items-start gap-2">
-                        <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
-                        <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
-                      </div>
-                      <p class="d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined fs-small text-star">
-                          star
-                        </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating ">4.0 </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card-custom mx-auto">
-                  <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
-                  <div class="card-body p-0">
-                    <div class="d-flex flex-column p-4 gap-4">
-                      <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex gap-2 align-items-center">
-                          <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
-                          <p class="text-neutral-400">Kelly Hsu</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-end">
-                          <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
-                          <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-400">
-                      <div class="d-flex flex-column align-items-start gap-2">
-                        <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
-                        <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
-                      </div>
-                      <p class="d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined fs-small text-star">
-                          star
-                        </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating ">4.0 </span>
-                        <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
-                      </p>
-                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <div class="swiper-button-next btn-swiper-pagination"> -->
-            <div class="swiper-button-next-n btn-swiper-pagination d-none d-md-block">
-              <span class="material-symbols-outlined">
-                arrow_right_alt
-              </span>
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- <div class="swiper-button-prev btn-swiper-pagination"></div> -->
-            <div class="swiper-button-prev-n btn-swiper-pagination d-none d-md-block">
-              <span class="material-symbols-outlined">
-                arrow_left_alt
-              </span>
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next-n btn-swiper-pagination d-none d-md-block">
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+          </div>
+          <div class="swiper-button-prev-n btn-swiper-pagination d-none d-md-block">
+            <span class="material-symbols-outlined">
+              arrow_back
+            </span>
           </div>
         </div>
       </div>
@@ -367,8 +358,8 @@
     <section class="section-Categories">
       <div class="bg-primary py-11 my-8 my-xxl-13 rounded-xxl-80 rounded-40">
         <div class="container">
-          <div class="row row-cols-1 row-cols-xxl-2 gap-8 gap-xxl-0">
-            <div class="col order-2 order-xxl-1">
+          <div class="row gap-8 justify-content-between align-items-center">
+            <div class="col-12 col-xxl-6 order-2 order-xxl-1">
               <div class="d-flex flex-nowrap flex-xxl-wrap gap-6 mb-6 overflow-auto">
                 <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
                   <div class="d-flex p-4 bg-i-orange rounded-12">
@@ -445,12 +436,12 @@
                 </div>
               </div>
             </div>
-            <div class="col order-1 order-xxl-2">
+            <div class="col-12 col-xxl-5 order-1 order-xxl-2">
               <div class="d-xxl-flex align-items-start gap-2">
                 <img src="../assets/images/deco/polygon-1.png" alt="polygon-1">
                 <div class="w-xxl-100 d-xxl-flex flex-column mt-2 mt-xxl-0">
                   <h2 class="fs-1 fw-bold text-white mb-2 mb-xxl-0">想學什麼嗎？<br>一探究竟。</h2>
-                  <img src="../assets/images/deco/line-2.png" alt="line-2">
+                  <img class="mw-100" src="../assets/images/deco/line-2.png" alt="line-2">
                 </div>
               </div>
             </div>
@@ -460,25 +451,25 @@
     </section>
 
     <!-- 師資 -->
-    <section class="section-Teacher">
+    <section class="section-Teacher overflow-hidden">
       <div class="container pt-11 pb-13 pt-lg-13 pb-lg-14">
         <div class="d-flex flex-column align-items-lg-center gap-2 mb-lg-8 mb-6">
           <h2 class="fs-1 f-custom-title-fw f-custom-lg-letter-spacing title-deco">頂尖講師<br class="d-block d-lg-none">帶你飛</h2>
           <p class="f-sm-inter text-neutral-400">超真實學員評價，這些講師你絕對不能錯過！</p>
         </div>
-        <div class="swiper TeacherSwiper">
+        <div class="swiper TeacherSwiper overflow-visible">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="card card-custom mx-auto">
+              <div class="card border-0 mx-auto">
                 <img src="../assets/images/teacher-3.png" class="card-img-top teacherpic rounded-20" alt="teacher-3">
-                <div class="card-body p-6 bg-white rounded-20">
+                <div class="card-body card-custom p-6 bg-white">
                   <div class="d-flex flex-column gap-6">
                     <h6 class="card-title f-custom-lg-letter-spacing">Mr. Robert</h6>
                     <div class="card-txt d-flex flex-column gap-2">
                       <div class="d-flex gap-2">
                         <span class="badge bg-neutral-200">音樂創作</span>
                         <p class="d-flex align-items-center gap-1">
-                          <span class="material-symbols-outlined fs-small text-star">
+                          <span class="material-symbols-outlined icon-fill fs-small text-star">
                             star
                           </span>
                           <span class="fs-small f-custom-body-fw f-custom-lg-letter-spacing text-star-rating">4.0 </span>
@@ -493,16 +484,16 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card-custom mx-auto">
+              <div class="card border-0 mx-auto">
                 <img src="../assets/images/teacher-1.png" class="card-img-top teacherpic rounded-20" alt="teacher-1">
-                <div class="card-body p-6 bg-white rounded-20">
+                <div class="card-body card-custom p-6 bg-white">
                   <div class="d-flex flex-column gap-6">
                     <h6 class="card-title">Kelly Beck</h6>
                     <div class="card-txt d-flex flex-column gap-2">
                       <div class="d-flex gap-2">
                         <span class="badge bg-neutral-200">英文寫作</span>
                         <p class="d-flex align-items-center gap-2">
-                          <span class="material-symbols-outlined fs-small text-star">
+                          <span class="material-symbols-outlined icon-fill fs-small text-star">
                             star
                           </span>
                           <span class="fs-small f-custom-body-fw f-custom-lg-letter-spacing text-star-rating">4.8 </span>
@@ -517,16 +508,16 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card-custom mx-auto">
+              <div class="card border-0 mx-auto">
                 <img src="../assets/images/teacher-2.png" class="card-img-top teacherpic rounded-20" alt="teacher-2">
-                <div class="card-body p-6 bg-white rounded-20">
+                <div class="card-body card-custom p-6 bg-white">
                   <div class="d-flex flex-column gap-6">
                     <h6 class="card-title">K. Lee</h6>
                     <div class="card-txt d-flex flex-column gap-2">
                       <div class="d-flex gap-2">
                         <span class="badge bg-neutral-200">音樂創作</span>
                         <p class="d-flex align-items-center gap-2">
-                          <span class="material-symbols-outlined fs-small text-star">
+                          <span class="material-symbols-outlined icon-fill fs-small text-star">
                             star
                           </span>
                           <span class="fs-small f-custom-body-fw f-custom-lg-letter-spacing text-star-rating">4.8 </span>
@@ -541,7 +532,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination position-static mt-6"></div>
         </div>
       </div>
     </section>
