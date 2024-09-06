@@ -1,3 +1,11 @@
+.icon-fill {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 i{
     color: $primary;
     display: inline-block;
@@ -242,6 +250,26 @@ p{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.swiper .swiper-slide {
+    overflow: visible;
+}
+
+.swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    background: $neutral-200;
+    opacity: 1;
+}
+
+// swiper-pagination-bullet
+.swiper-pagination-bullet-active {
+    width: 24px;
+    height: 8px;
+    border-radius: 100px;
+    background: #0068FF;
+    opacity: 1;
+}
+
 
 //想學什麼 btn外框
 .btn-category{
@@ -256,6 +284,7 @@ p{
 // 用於文字標題裝飾
 .title-deco{
     position: relative;
+    z-index: 1;
 
     &::before{
         position: absolute;
