@@ -11,22 +11,54 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <!-- banner -->
-    <section class="section-banner overflow-hidden">
-      <div class="container-fluid container-xl pb-11">
+    <!-- Banner -->
+    <section class="section-Banner overflow-hidden">
+      <div class="container-fluid container-lg">
         <div class="swiper BannerSwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide position-relative">
               <img class="banner-image" src="../assets/images/hero-1.png" alt="hero-1">
+              <a class="slide-title position-absolute custom-flex-center justify-content-center" href="#">
+                探索感興趣的課程，今天立即上課
+                <span class="ms-4 material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a class="badge-banner position-absolute custom-flex-center" href="#">
+                <span class="badge text-bg-primary-100 text-primary me-2">熱銷課程 🔥</span>
+                給成人的鋼琴入門課，一小時教你彈奏上手！
+              </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide position-relative">
               <img class="banner-image" src="../assets/images/hero-2.png" alt="hero-2">
+              <a class="slide-title position-absolute custom-flex-center justify-content-center" href="#">
+                探索感興趣的課程，今天立即上課
+                <span class="ms-4 material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a class="badge-banner position-absolute custom-flex-center" href="#">
+                <span class="badge text-bg-primary-100 text-primary me-2">熱銷課程 🔥</span>
+                給成人的鋼琴入門課，一小時教你彈奏上手！
+              </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide position-relative">
               <img class="banner-image" src="../assets/images/hero-3.png" alt="hero-3">
+              <a class="slide-title position-absolute custom-flex-center justify-content-center" href="#">
+                探索感興趣的課程，今天立即上課
+                <span class="ms-4 material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a class="badge-banner position-absolute custom-flex-center" href="#">
+                <span class="badge text-bg-primary-100 text-primary me-2">熱銷課程 🔥</span>
+                給成人的鋼琴入門課，一小時教你彈奏上手！
+              </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide position-relative">
               <img class="banner-image" src="../assets/images/hero-4.png" alt="hero-4">
+              <a class="slide-title position-absolute custom-flex-center justify-content-center" href="#">
+                探索感興趣的課程，今天立即上課
+                <span class="ms-4 material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a class="badge-banner position-absolute custom-flex-center" href="#">
+                <span class="badge text-bg-primary-100 text-primary me-2">熱銷課程 🔥</span>
+                給成人的鋼琴入門課，一小時教你彈奏上手！
+              </a>
             </div>
           </div>
           <div class="swiper-button-next-n btn-swiper-pagination d-none d-xl-block">
@@ -49,7 +81,7 @@
 
     <!-- 火熱募資課程 -->
     <section class="section-Course">
-      <div class="container py-11 py-lg-13">
+      <div class="container py-11 py-lg-13 position-relative">
         <div class="row">
           <div class="col-12 col-lg-4">
             <h2 class="fs-1 f-custom-title-fw f-custom-lg-letter-spacing mb-2">火熱募資課程</h2>
@@ -68,8 +100,9 @@
           <div class="col-12 col-lg-8">
             <div class="row row-gap-6">
               <div class="col-12 col-lg-6">
-                <div class="card card-custom mx-auto">
+                <div class="card card-custom mx-auto position-relative">
                   <img src="../assets/images/course-4.png" class="card-img-top" alt="course-4">
+                  <!-- <span class="badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span> -->
                   <div class="card-body py-6">
                     <h6 class="card-title f-custom-title-fw f-custom-title-lh f-custom-letter-spacing text-truncate">創意寫作工坊：從靈感到出版的全過程</h6>
                     <div class="d-flex gap-3 align-items-center mb-6">
@@ -162,6 +195,7 @@
             </div>
           </div>
         </div>
+        <img class="postion-left-flower-2 position-absolute" src="../assets/images/deco/flower-2.png" alt="flower-2">
       </div>
     </section>
 
@@ -175,8 +209,9 @@
         <div class="swiper TopsalesSwiper overflow-visible">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="card card-custom">
+              <div class="card card-custom position-relative">
                 <img src="../assets/images/course-4.png" class="card-img-top" alt="course-4">
+                <span class="badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span>
                 <div class="card-body p-0">
                   <div class="d-flex flex-column p-4 gap-4">
                     <h6 class="mb-4" style="height: 2rem">創意寫作工坊：從靈感到出版的全過程</h6>
@@ -208,8 +243,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card-custom">
+              <div class="card card-custom position-relative">
                 <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                <span class="badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span>
                 <div class="card-body p-0">
                   <div class="d-flex flex-column p-4 gap-4">
                     <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
@@ -241,8 +277,9 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card-custom">
+              <div class="card card-custom position-relative">
                 <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                <span class="badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span>
                 <div class="card-body p-0">
                   <div class="d-flex flex-column p-4 gap-4">
                     <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
@@ -452,7 +489,8 @@
 
     <!-- 師資 -->
     <section class="section-Teacher overflow-hidden">
-      <div class="container pt-11 pb-13 pt-lg-13 pb-lg-14">
+      <div class="container pt-11 pb-13 pt-lg-13 pb-lg-14 position-relative">
+        <img class="d-none d-lg-block position-absolute position-line" src="../assets/images/deco/line-1.png" alt="line-1">
         <div class="d-flex flex-column align-items-lg-center gap-2 mb-lg-8 mb-6">
           <h2 class="fs-1 f-custom-title-fw f-custom-lg-letter-spacing title-deco">頂尖講師<br class="d-block d-lg-none">帶你飛</h2>
           <p class="f-sm-inter text-neutral-400">超真實學員評價，這些講師你絕對不能錯過！</p>
