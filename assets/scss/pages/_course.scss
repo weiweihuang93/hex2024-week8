@@ -1,0 +1,117 @@
+// section-CourseCategory
+.section-CourseCategory{
+    .postion-left-flower-2{
+        top: 50%;
+        left: -53px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    .postion-left-polygon-2{
+        top: 80px;
+        left: 150px;
+        z-index: 1;
+
+        @media (max-width: 1200px) {
+            top: 40px;
+            left: 16px;
+            z-index: 1;
+        }
+    }
+    .postion-right-flower-2{
+        top: 100px;
+        right: 24px;
+        z-index: 1;
+
+        @media (max-width: 1200px) {
+            width: 240px;
+            height: 240px;
+            top: 0;
+            right: -65px;
+            transform: none;
+            z-index: 1;
+        }
+    }
+    .postion-right-polygon-2{
+        top: 40px;
+        right: 360px;
+        z-index: 1;
+    }
+}
+
+// section-CourseMenu
+// section-CourseSearch
+.Coursemenu-link a.active {
+    font-weight: 600;
+    color: $primary;
+}
+
+.Coursemenu-link a:hover {
+    font-weight: $font-weight-semibold;
+}
+
+.section-CourseMenu{
+    .Coursemenu-link a {
+        position: relative;
+    }
+    .Coursemenu-link a::after {
+        content: '';
+        width: 32px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: $primary;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    .Coursemenu-link a.active::after {
+        opacity: 1;
+    }
+    .Coursemenu-link a:hover::after {
+        opacity: 1;
+        transition: .3s ease;
+    }
+}
+
+.HotThemecard{
+    width: 196px;
+    padding: 24px 0px;
+    border-radius: 12px;
+
+}
+.section-CourseTeacher{
+    .card{
+        max-width: 327px;
+        margin: auto;
+    }
+}
+
+.section-CourseSearch{
+    // card-custom
+    .card-flex{
+        max-width: 306px;
+        border-radius: 20px;
+        box-shadow: 0px 25px 50px -12px #0000001F;
+        overflow: hidden;
+
+        @media (max-width: 992px) {
+            // min-width: 351px;
+            max-width: 100%;
+            border-radius: 0;
+            box-shadow: 0px 0px 0px 0px;
+        }
+    }
+
+    .card-img-top{
+        @media (max-width: 992px) {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+        }
+    }
+    .profile{
+        width: 32px;
+        height: 32px;
+    }
+}

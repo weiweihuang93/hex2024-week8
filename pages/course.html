@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="section-CourseCategory">
+      <div class="bg-neutral-100 position-relative overflow-hidden">
+        <div class="container-lg py-8 py-lg-11 position-relative z-index-10">
+          <nav aria-label="breadcrumb mb-4 mb-lg-8">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="text-neutral-400" href="#">所有課程</a></li>
+              <li class="breadcrumb-item active" aria-current="page">程式課程</li>
+            </ol>
+          </nav>
+          <h1 class="fs-lg-1 fs-3 f-custom-letter-spacing mb-8">程式課程</h1>
+          <div class="d-flex flex-nowrap overflow-auto gap-2">
+            <a class="btn btn-sm btn-initial active text-nowrap">所有程式</a>
+            <a class="btn btn-sm btn-initial text-nowrap">網頁開發</a>
+            <a class="btn btn-sm btn-initial text-nowrap">資料科學</a>
+            <a class="btn btn-sm btn-initial text-nowrap">行動版開發</a>
+            <a class="btn btn-sm btn-initial text-nowrap">程式語言</a>
+            <a class="btn btn-sm btn-initial text-nowrap">遊戲開發</a>
+            <a class="btn btn-sm btn-initial text-nowrap">資料庫設計與開發</a>
+            <a class="btn btn-sm btn-initial text-nowrap">軟體測試</a>
+            <a class="btn btn-sm btn-initial text-nowrap">軟體開發工具</a>
+            <a class="btn btn-sm btn-initial text-nowrap">無程式碼開發</a>
+          </div>
+        </div>
+
+        <img class="d-none d-xl-block postion-left-flower-2 position-absolute" src="../assets/images/deco/flower-2.png" alt="flower-2">
+        <img class="postion-left-polygon-2 position-absolute" src="../assets/images/deco/polygon-2.png" alt="polygon-2">
+        <img class="postion-right-flower-2 position-absolute" src="../assets/images/deco/flower-2.png" alt="flower-2">
+        <img class="d-none d-xl-block postion-right-polygon-2 position-absolute" src="../assets/images/deco/polygon-2.png" alt="polygon-2">
+      </div>
+    </section>
+
+    <section class="section-CourseMenu">
+      <div class="container py-8 pt-lg-8 pb-lg-11">
+        <div class="Coursemenu-link d-flex gap-6 gap-lg-7 border-1 border-bottom border-neutral-200 mb-8 mb-lg-11">
+          <a class="py-4 f-custom-letter-spacing active" href="#">最熱門</a>
+          <a class="py-4 f-custom-letter-spacing" href="#">最新課程</a>
+          <a class="py-4 f-custom-letter-spacing" href="#">話題最高</a>
+        </div>
+
+        <div class="swiper TopsalesSwiper overflow-visible mb-8 mb-lg-11">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card card-custom position-relative">
+                <img src="../assets/images/course-4.png" class="card-img-top" alt="course-4">
+                <span class="badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span>
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">創意寫作工坊：從靈感到出版的全過程</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-custom position-relative">
+                <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+                <span class="badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span>
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card card-custom">
+                <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column p-4 gap-4">
+                    <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex gap-2 align-items-center">
+                        <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                        <p class="text-neutral-400">Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex flex-column align-items-end">
+                        <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                        <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center p-4 border-1 border-top border-neutral-200">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                      <span class="badge badge-tag-sm bg-neutral-200 fw-normal">中文創作</span>
+                      <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                    </div>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next-n btn-swiper-pagination d-none d-md-block">
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+          </div>
+          <div class="swiper-button-prev-n btn-swiper-pagination d-none d-md-block">
+            <span class="material-symbols-outlined">
+              arrow_back
+            </span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-8">
+          <h2 class="fs-lg-3 fs-6 f-custom-letter-spacing">熱門主題</h2>
+          <div class="d-flex gap-3">
+            <div class="swiper-button-prev-icon p-2">
+              <span class="material-symbols-outlined ">
+                arrow_back
+              </span>
+            </div>
+            <div class="swiper-button-next-icon p-2">
+              <span class="material-symbols-outlined ">
+                arrow_forward
+              </span>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper HotThemeSwiper overflow-visible">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card HotThemecard border border-1 border-neutral-200 text-center">
+                <h6 class="f-custom-letter-spacing w-100 mb-2">HTML 5</h6>
+                <p class="text-neutral-400">2,103 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card HotThemecard border border-1 border-neutral-200 text-center">
+                <h6 class="f-custom-letter-spacing w-100 mb-2">Javascript</h6>
+                <p class="text-neutral-400">891 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card HotThemecard border border-1 border-neutral-200 text-center">
+                <h6 class="f-custom-letter-spacing w-100 mb-2">Python</h6>
+                <p class="text-neutral-400">1,384 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card HotThemecard border border-1 border-neutral-200 text-center">
+                <h6 class="f-custom-letter-spacing w-100 mb-2">CSS 3</h6>
+                <p class="text-neutral-400">240 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card HotThemecard border border-1 border-neutral-200 text-center">
+                <h6 class="f-custom-letter-spacing w-100 mb-2">HTML 5</h6>
+                <p class="text-neutral-400">2,103 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card HotThemecard border border-1 border-neutral-200 text-center">
+                <h6 class="f-custom-letter-spacing w-100 mb-2">HTML 5</h6>
+                <p class="text-neutral-400">2,103 個課程</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination position-static mt-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-CourseTeacher">
+      <div class="bg-neutral-100">
+        <div class="container py-8 py-lg-11">
+          <h2 class="text-center fs-5 fs-lg-2 f-custom-letter-spacing mb-8">程式頂尖講師</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-gap-6">
+            <div class="col">
+              <div class="card card-custom-border">
+                <img src="../assets/images/teacher-4.png" class="card-img-top" alt="teacher-4">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column align-items-center gap-1 p-4">
+                    <p class="fw-semibold text-i-dark">Devon Lane</p>
+                    <p class="fs-small text-neutral-400">自由接案工程師</p>
+                  </div>
+                  <div class="d-flex justify-content-between p-4 border-1 border-top border-neutral-200">
+                    <p class="fs-small text-neutral-400">3,394 個學生</p>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-custom-border">
+                <img src="../assets/images/teacher-5.png" class="card-img-top" alt="teacher-5">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column align-items-center gap-1 p-4">
+                    <p class="fw-semibold text-i-dark">Jenny Cooper</p>
+                    <p class="fs-small text-neutral-400">資深全端工程師</p>
+                  </div>
+                  <div class="d-flex justify-content-between p-4 border-1 border-top border-neutral-200">
+                    <p class="fs-small text-neutral-400">3,394 個學生</p>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-custom-border">
+                <img src="../assets/images/teacher-6.png" class="card-img-top" alt="teacher-6">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column align-items-center gap-1 p-4">
+                    <p class="fw-semibold text-i-dark">Johnny Khan</p>
+                    <p class="fs-small text-neutral-400">矽谷軟體工程師</p>
+                  </div>
+                  <div class="d-flex justify-content-between p-4 border-1 border-top border-neutral-200">
+                    <p class="fs-small text-neutral-400">3,394 個學生</p>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-custom-border">
+                <img src="../assets/images/teacher-7.png" class="card-img-top" alt="teacher-7">
+                <div class="card-body p-0">
+                  <div class="d-flex flex-column align-items-center gap-1 p-4">
+                    <p class="fw-semibold text-i-dark">Annie Lin</p>
+                    <p class="fs-small text-neutral-400">資深前端工程師</p>
+                  </div>
+                  <div class="d-flex justify-content-between p-4 border-1 border-top border-neutral-200">
+                    <p class="fs-small text-neutral-400">3,394 個學生</p>
+                    <p class="d-flex align-items-center gap-1">
+                      <span class="material-symbols-outlined icon-fill fs-small text-star">
+                        star
+                      </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                      <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-CourseSearch">
+      <div class="container py-8 py-lg-11">
+        <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-between align-items-lg-stretch gap-3 gap-lg-0 mb-8">
+          <p class="fs-lg-3 fw-semibold">查看 520 筆與「<a class="text-primary" href="#">程式開發</a>」的相關課程</p>
+
+          <div class="Coursemenu-link py-4 d-flex align-items-end">
+            <a class="px-4 py-1 f-custom-letter-spacing border-1 border-end border-neutral-200" href="#">最新課程</a>
+            <a class="px-4 py-1 f-custom-letter-spacing active border-1 border-end border-neutral-200" href="#">最高人氣</a>
+            <a class="px-4 py-1 f-custom-letter-spacing" href="#">最新價格</a>
+          </div>
+        </div>
+
+        <div class="row row-gap-6 mb-8">
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200 position-relative">
+              <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+              <span class="d-none d-lg-block badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span>
+              <span class="d-block d-lg-none badge py-1 px-2 text-bg-alert-100 text-alert fw-normal position-absolute badge-position-sm">8 折</span>
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200 position-relative">
+              <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+              <span class="d-none d-lg-block badge text-bg-alert-100 text-alert position-absolute badge-position">限時 8 折 🔥 </span>
+              <span class="d-block d-lg-none badge py-1 px-2 text-bg-alert-100 text-alert fw-normal position-absolute badge-position-sm">8 折</span>
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 以上8張 -->
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 以上12張 -->
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 以上16張 -->
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 以上20張 -->
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-5.png" class="card-img-top" alt="course-5">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-6.png" class="card-img-top" alt="course-6">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">全面掌握 JavaScript 開發技術</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-7.png" class="card-img-top" alt="course-7">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">HTML & CSS 網頁設計基礎教程</h6>
+                  <div class="d-flex justify-content-between mb-2 mb-lg-0">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-xl-3 d-none d-xl-block">
+            <div class="card-flex d-flex d-lg-block gap-2 border-1 border-bottom border-neutral-200">
+              <img src="../assets/images/course-8.png" class="card-img-top" alt="course-8">
+              <div class="card-body mb-6 mb-lg-0">
+                <div class="d-flex flex-column p-0 p-lg-4 gap-4">
+                  <h6 class="mb-4" style="height: 2rem">更進一步！深入學習 Node.js 與後端開發</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img class="profile" src="../assets/images/avatar-2.png" alt="avatar-2">
+                      <p class="text-neutral-400">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <h6 class="fw-bold f-lh-base text-primary">NT$ 2,480</h6>
+                      <span class="fs-small text-star-count text-decoration-line-through">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-0 p-lg-4 border-1 border-top border-neutral-200">
+                  <div class="d-flex flex-column align-items-start gap-2 py-2 py-lg-0">
+                    <span class="badge badge-tag-sm bg-neutral-200 fw-normal">程式開發</span>
+                    <p class="fs-small f-custom-letter-spacing text-neutral-400">已有 420 位同學加入</p>
+                  </div>
+                  <p class="d-flex align-items-center gap-1">
+                    <span class="material-symbols-outlined icon-fill fs-small text-star">
+                      star
+                    </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-rating">4.0 </span>
+                    <span class="fs-small fw-medium f-custom-letter-spacing-n text-star-count">(333)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 以上24張 -->
+        </div>
+        <div class="d-flex justify-content-center justify-content-lg-end gap-2">
+          <button class="btn-page disable custom-flex-center">
+            <span class="material-symbols-outlined">
+              keyboard_double_arrow_left
+            </span>
+          </button>
+          <button class="btn-page disable custom-flex-center">
+            <span class="material-symbols-outlined">
+              chevron_backward
+            </span>
+          </button>
+          <button class="btn-page active">
+            <span>
+              1
+            </span>
+          </button>
+          <button class="btn-page">
+            <span>
+              2
+            </span>
+          </button>
+          <button class="btn-page">
+            <span>
+              3
+            </span>
+          </button>
+          <button class="btn-page">
+            <span>
+              ...
+            </span>
+          </button>
+          <button class="btn-page">
+            <span>
+              10
+            </span>
+          </button>
+          <button class="btn-page custom-flex-center">
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+          <button class="btn-page custom-flex-center">
+            <span class="material-symbols-outlined">
+              keyboard_double_arrow_right
+            </span>
+          </button>
+        </div>
+
+        <!-- <div class="d-flex justify-content-center justify-content-lg-end gap-2">
+          <button class="btn btn-page bg-neutral-200 text-neutral-300 custom-flex-center">
+            <span class="material-symbols-outlined">
+              keyboard_double_arrow_left
+            </span>
+          </button>
+          <button class="btn btn-page bg-neutral-200 text-neutral-300 custom-flex-center">
+            <span class="material-symbols-outlined">
+              chevron_backward
+            </span>
+          </button>
+          <button class="btn btn-page bg-primary text-white">
+            <span>
+              1
+            </span>
+          </button>
+          <button class="btn btn-page bg-white text-neutral-400 border border-1 border-copy">
+            <span>
+              2
+            </span>
+          </button>
+          <button class="btn btn-page bg-white text-neutral-400 border border-1 border-copy">
+            <span>
+              3
+            </span>
+          </button>
+          <button class="btn btn-page bg-white text-neutral-400 border border-1 border-copy">
+            <span>
+              ...
+            </span>
+          </button>
+          <button class="btn btn-page bg-white text-neutral-400 border border-1 border-copy">
+            <span>
+              10
+            </span>
+          </button>
+          <button class="btn btn-page bg-white text-neutral-400 border border-1 border-copy custom-flex-center">
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+          <button class="btn btn-page bg-white text-neutral-400 border border-1 border-copy custom-flex-center">
+            <span class="material-symbols-outlined">
+              keyboard_double_arrow_right
+            </span>
+          </button>
+        </div> -->
+
+      </div>
+
+
+    </section>
+
+    <!-- 想學什麼嗎 -->
+    <section class="section-Categories">
+      <div class="bg-primary py-8 my-8 my-xxl-13 rounded-xxl-80 rounded-40">
+        <div class="container">
+          <div class="row gap-8 justify-content-between align-items-center">
+            <div class="col-12 col-xxl-6 order-2 order-xxl-1">
+              <div class="d-flex flex-nowrap flex-xxl-wrap gap-6 mb-6 overflow-auto">
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-i-orange rounded-12">
+                    <img src="../assets/images/icons/megaphoneSimple.png" alt="megaphoneSimple">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">網路行銷</p>
+                    <p class="fs-small f-custom-letter-spacing-sm text-i-lightgray text-nowrap">342 門課程</p>
+                  </div>
+                </div>
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-i-gray rounded-12">
+                    <img src="../assets/images/icons/camera.png" alt="camera">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">拍攝剪輯</p>
+                    <p class="fs-small f-custom-letter-spacing-sm text-i-lightgray text-nowrap">563 門課程</p>
+                  </div>
+                </div>
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-i-pink rounded-12">
+                    <img src="../assets/images/icons/chartBarHorizontal.png" alt="chartBarHorizontal">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">自我成長</p>
+                    <p class="fs-small f-custom-letter-spacing-sm text-i-lightgray text-nowrap">490 門課程</p>
+                  </div>
+                </div>
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-i-purple rounded-12">
+                    <img src="../assets/images/icons/penNib.png" alt="penNib">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">藝術設計</p>
+                    <p class="fs-small f-custom-letter-spacing-sm text-i-lightgray text-nowrap">230 門課程</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-nowrap flex-xxl-wrap gap-6 overflow-auto">
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-i-lightblue rounded-12">
+                    <img src="../assets/images/icons/bugDroid.png" alt="bugDroid">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">數據分析</p>
+                    <p class="fs-small f-custom-letter-spacing-sm text-i-lightgray text-nowrap">395 門課程</p>
+                  </div>
+                </div>
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-i-lightgreen rounded-12">
+                    <img src="../assets/images/icons/creditCard.png" alt="creditCard">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">投資理財</p>
+                    <p class="fs-small f-custom-letter-spacing-sm text-i-lightgray text-nowrap">486 門課程</p>
+                  </div>
+                </div>
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-i-lightpurple rounded-12">
+                    <img src="../assets/images/icons/headphones.png" alt="headphones">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">音樂創作</p>
+                    <p class="fs-small f-custom-letter-spacing-sm text-i-lightgray text-nowrap">283 門課程</p>
+                  </div>
+                </div>
+                <div class="btn-category custom-flex-center gap-5 p-5 bg-white rounded-20">
+                  <div class="d-flex p-4 bg-primary rounded-12">
+                    <img src="../assets/images/icons/arrow.png" alt="arrow" style="width:32px; height:32px">
+                  </div>
+                  <div class="d-flex flex-column gap-2">
+                    <p class="fw-semibold f-custom-letter-spacing-n text-i-dark text-nowrap">探索更多</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xxl-5 order-1 order-xxl-2">
+              <div class="d-xxl-flex align-items-start gap-2">
+                <img src="../assets/images/deco/polygon-1.png" alt="polygon-1">
+                <div class="w-xxl-100 d-xxl-flex flex-column mt-2 mt-xxl-0">
+                  <h2 class="fs-1 fw-bold text-white mb-2 mb-xxl-0">想學什麼嗎？<br>一探究竟。</h2>
+                  <img class="mw-100" src="../assets/images/deco/line-2.png" alt="line-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

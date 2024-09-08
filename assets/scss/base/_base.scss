@@ -155,6 +155,13 @@ p{
     overflow: hidden;
 }
 
+.card-custom-border{
+    border: 1px solid $neutral-200;
+    border-radius: 12px;
+    box-shadow: 0px -1px 0px 0px #E9EAF0 inset;
+    // overflow: hidden;
+}
+
 // 用途: 火熱募資課程btn垂直對齊
 // 用途: 想學什麼btn
 .custom-flex-center {
@@ -270,6 +277,18 @@ p{
     opacity: 1;
 }
 
+// 用於熱門主題
+// swiper-pagination
+.swiper-button-prev-icon,
+.swiper-button-next-icon{
+    color: $neutral-300;
+}
+
+.swiper-button-prev-icon:hover,
+.swiper-button-next-icon:hover{
+    color: $primary;
+}
+
 
 //想學什麼 btn外框
 .btn-category{
@@ -280,6 +299,123 @@ p{
         width: 272px;
     }
 }
+
+// .btn-primary {
+//     color: #fff;
+//     background-color: #0068FF;
+//     border-color: #0068FF;
+
+//     &:hover {
+//         color: #fff;
+//         background-color: $primary-dark;
+//         border-color: $primary-dark;
+//     }
+
+//     &:active {
+//         color: #fff;
+//         background-color: $primary-dark;
+//         border-color: $primary-dark;
+//     }
+// }
+
+
+// 若套用btn 無法解決active樣式問題
+// 目前只使用在course.html頁面
+.btn-initial{
+    border: 1px solid $neutral-200;
+    background-color: $white;
+    color: $neutral-400;
+    letter-spacing: 0.02em;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
+.btn-initial.active{
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+        background-color: $primary-dark;
+        color: $white;
+    }
+}
+.btn-initial.disable{
+    background-color: $neutral-200;
+    color: $neutral-300;
+}
+
+// .btn{
+//     &:hover {
+//         background-color: $primary;
+//         color: $white;
+//     }
+
+//     &:active {
+//         background-color: $primary-dark;
+//         color: $white;
+//     }
+// }
+// .btn.active{
+//     background-color: $primary;
+//     color: $white;
+
+//     &:hover {
+//         background-color: $primary-dark;
+//         color: $white;
+//     }
+//     &:active {
+//         background-color: $primary-dark;
+//         color: $white;
+//     }
+// }
+
+.btn-page{
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid $copy;
+    background-color: $white;
+    color: $neutral-400;
+    letter-spacing: 0.02em;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+
+    &:active {
+        background-color: $primary-dark;
+        color: $white;
+    }
+
+    @media (max-width: 992px) {
+        width: 32px;
+        height: 32px;
+        padding: 4px;
+    }
+}
+.btn-page.active{
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+        background-color: $primary-dark;
+        color: $white;
+    }
+    &:active {
+        background-color: $primary-dark;
+        color: $white;
+    }
+}
+.btn-page.disable{
+    background-color: $neutral-200;
+    color: $neutral-300;
+}
+
 
 // 用於文字標題裝飾
 .title-deco{
@@ -309,4 +445,21 @@ p{
 
 .text-decoration-line-through{
     color: #808080;
+}
+
+// 限時8折
+// badge-postion定位
+// class需使用position-absolute
+.badge-position{
+    top: 16px;
+    left: 16px;
+}
+.badge-position-sm{
+    top: 4px;
+    left: 4px;
+}
+
+
+.z-index-10{
+    z-index: 10;
 }

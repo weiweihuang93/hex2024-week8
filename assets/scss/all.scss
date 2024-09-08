@@ -26,10 +26,14 @@ $utilities: map-merge(
 @import "bootstrap/scss/utilities/api";
 
 @import "./base/base";
-@import "./pages/index";
 
 @import "./layout/header";
 @import "./layout/footer";
+
+@import "./pages/index";
+@import "./pages/course";
+
+
 
 // *{
 //     outline: 1px solid red;

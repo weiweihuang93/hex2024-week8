@@ -10,7 +10,6 @@ const BannerSwiper = new Swiper(".BannerSwiper", {
     slidesPerView: 1,
 
     breakpoints: {
-      // 当窗口宽度 >= 320px 时
       1200: {
       slidesPerView: 1,
       spaceBetween: 24,
@@ -30,7 +29,6 @@ const TopsalesSwiper = new Swiper(".TopsalesSwiper", {
   loop: true, // 啟用回到起點模式
     
     breakpoints: {
-        // 当窗口宽度 >= 320px 时
         768: {
           slidesPerView: 2,
           spaceBetween: 24,
@@ -57,7 +55,6 @@ const TeacherSwiper = new Swiper(".TeacherSwiper", {
   loop: true, // 啟用回到起點模式
 
   breakpoints: {
-    // 当窗口宽度 >= 320px 时
     992: {
       slidesPerView: 2,
       spaceBetween: 24,
@@ -70,5 +67,43 @@ const TeacherSwiper = new Swiper(".TeacherSwiper", {
 
   pagination: {
     el: ".swiper-pagination",
+  },
+});
+
+const HotThemeSwiper = new Swiper(".HotThemeSwiper", {
+  loop: true, // 啟用回到起點模式
+  slidesPerView: 1,
+  spaceBetween: 16,
+
+  breakpoints: {
+    430: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 24,
+    },
+    1400: {
+      slidesPerView: 6,
+      spaceBetween: 24,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next-icon",
+    prevEl: ".swiper-button-prev-icon",
   },
 });
