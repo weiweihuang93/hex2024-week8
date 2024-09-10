@@ -1,0 +1,56 @@
+// btn預設值 padding 16 16 /fs-16/fw-400/lh 1.5/radius-12
+
+// btn-sm padding 12 16
+.btn-sm{
+    font-weight: 400;
+}
+
+// btn-lg padding 16 32
+.btn-lg{
+    font-weight: 600;
+}
+
+// btn-page
+.btn-page{
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid $i-gray-10;
+    background-color: $white;
+    color: $neutral-80;
+    letter-spacing: 0.02em;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+
+    &:active {
+        background-color: $primary-dark;
+        color: $white;
+    }
+
+    @media (max-width: 992px) {
+        width: 32px;
+        height: 32px;
+        padding: 4px;
+    }
+}
+.btn-page.active{
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+        background-color: $primary-dark;
+        color: $white;
+    }
+    &:active {
+        background-color: $primary-dark;
+        color: $white;
+    }
+}
+.btn-page.disable{
+    background-color: $neutral-40;
+    color: $neutral-60;
+}

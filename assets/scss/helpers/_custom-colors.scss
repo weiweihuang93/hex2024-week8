@@ -1,0 +1,94 @@
+// 自定義
+$primary:         #0068FF;
+$primary-dark:    #003BB7;
+$primary-10:     #E5F4FF;
+$primary-40:     #99CFFF;
+$primary-60:     #66B1FF;
+$primary-80:     #3F95FF;
+
+$success:         #7CD31F;
+$success-10:     #F0FCD1;
+$success-20:     #DDFAA5;
+$success-120:    #48970F;
+
+$info:            #2AAFFC;
+$info-120:       #1566B5;
+$info-10:        #D4F9FE;
+$info-20:        #A9EFFE;
+
+$alert:           #FF3A55;
+$alert-10:       #FFE0D7;
+$alert-20:       #FFBBB0;
+$alert-120:      #B71D4F;
+
+$white:           #FFFFFF;
+$neutral-10:     #F9F9F9;
+$neutral-40:     #ECECEC;
+$neutral-60:     #909090;
+$neutral-80:     #4B4B4B;
+$black:           #000000;
+
+$star: #F6BD2B;
+$i-gray-100: #180000; //$star-rating
+$i-gray-80: #1D2026; // $i-dark
+$i-gray-50: #6E7485; //i-lightgray
+$i-gray-40: #808080; //star-count
+$i-gray-10: #D4D4D4; //copy
+
+$i-orange: #FF994F;
+$i-gray: #5E5E5E;
+$i-pink: #FF9BAD;
+$i-purple: #564FFD;
+$i-lightblue: #54DFF2;
+$i-lightgreen: #52E9BC;
+$i-lightpurple: #CF93FF;
+
+$custom-colors: (
+
+  // 自定義
+  "primary":            $primary,
+  "primary-dark":       $primary-dark,
+  "primary-10":         $primary-10,
+  "primary-40":         $primary-40,
+  "primary-60":         $primary-60,
+  "primary-80":         $primary-80,
+
+  "success":            $success,
+  "success-10":         $success-10,
+  "success-20":         $success-20,
+  "success-120":        $success-120,
+
+  "info":               $info,
+  "info-10":            $info-10,
+  "info-20":            $info-20,
+  "info-120":           $info-120,
+
+  "alert":              $alert,
+  "alert-10":           $alert-10,
+  "alert-20":           $alert-20,
+  "alert-120":          $alert-120,
+
+  "black":              $black,
+  "neutral-10":         $neutral-10,
+  "neutral-40":         $neutral-40,
+  "neutral-60":         $neutral-60,
+  "neutral-80":         $neutral-80,
+  "white":              $white,
+
+  "star":               $star,
+  "i-gray-100":         $i-gray-100,
+  "i-gray-80":          $i-gray-80,
+  "i-gray-50":          $i-gray-50,
+  "i-gray-40":          $i-gray-40,
+  "i-gray-10":          $i-gray-10,
+
+  "i-orange":       $i-orange,
+  "i-gray":         $i-gray,
+  "i-pink":         $i-pink,
+  "i-purple":       $i-purple,
+  "i-lightblue":    $i-lightblue,
+  "i-lightgreen":   $i-lightgreen,
+  "i-lightpurple":  $i-lightpurple,
+
+) !default;
+$theme-colors: map-merge($theme-colors, $custom-colors);

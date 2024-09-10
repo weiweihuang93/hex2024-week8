@@ -1,0 +1,141 @@
+// $font-size-sm:                $font-size-base * .875 !default; //14
+// $font-size-lg:                $font-size-base * 1.25 !default; //20
+
+// $font-weight-normal:          400 !default;
+// $font-weight-medium:          500 !default;
+// $font-weight-semibold:        600 !default;
+// $font-weight-bold:            700 !default;
+// $font-weight-bolder:          bolder !default;
+// $font-weight-base:            $font-weight-normal !default; //400
+
+// $line-height-base:            1.5 !default;
+// $line-height-sm:              1.2 !default;
+// $line-height-lg:              2 !default;
+
+// $h1-font-size:                $font-size-base * 3 !default; // 48
+// $h2-font-size:                $font-size-base * 2.5 !default; // 40
+// $h3-font-size:                $font-size-base * 2 !default; // 32
+// $h4-font-size:                $font-size-base * 1.75 !default; // 28
+// $h5-font-size:                $font-size-base * 1.5 !default; // 24
+// $h6-font-size:                $font-size-base * 1.25 !default; // 20
+// $h6-font-size:                $font-size-base !default; //16
+
+// $headings-font-weight:        $font-weight-semibold !default; //600
+// $headings-line-height:        1.2 !default;
+
+//套用letter-spacing
+.text-custom-{
+  &title{
+    font-size: 16px;
+    font-weight: $font-weight-semibold; //700
+  }
+  &subtitle{
+    font-size: 14px;
+    font-weight: $font-weight-semibold; //600
+    line-height: 1.5;
+  }
+  &body{
+    font-size: 16px;
+    font-weight: $font-weight-normal;
+    line-height: 1.5;
+  }
+  &body-sm{
+    font-size: 14px;
+    font-weight: $font-weight-normal;
+    line-height: 1.5;
+  }
+  &tiny{
+    font-size: 12px;
+    font-weight: $font-weight-normal;
+  }
+  }
+  .fs-18{
+    font-size: 18px;
+  }
+
+.f-inter{
+  font-family: "Inter", sans-serif;
+  font-size: $h6-font-size; // 20
+  font-weight: $font-weight-medium; // 500
+  line-height: $line-height-base; // 1.5
+}
+
+.f-inter-sm{
+  font-family: "Inter", sans-serif;
+  font-size: $h8-font-size; // 14
+  font-weight: $font-weight-medium; // 500
+  line-height: $line-height-base; // 1.5
+}
+
+// 小尺寸適用
+@media (max-width: 992px) {
+  .f-sm-inter{
+    font-family: "Inter", sans-serif;
+    font-size: $h6-font-size; // 20
+    font-weight: $font-weight-medium; // 500
+    line-height: $line-height-base; // 1.5
+  }
+}
+
+// 目前只用於footer
+.f-inter-sm-lh{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+// 依照設計稿設定，大尺寸優先設為預設值
+// 標題預設 小尺寸fw-600 lh-1.2
+
+// p和其他預設 fw-400 lh-1.5
+
+/////letter-spacing 另外加上
+/// 全尺寸
+.f-letter{
+  letter-spacing: 0.02em;
+}
+
+// 大尺寸適用
+@media (min-width: 992px) {
+  .f-lg-letter{
+    letter-spacing: 0.02em;
+  }
+}
+
+// 部分適用
+.f-letter-sm{
+  letter-spacing: -0.01em;
+}
+
+/////line-height
+/// 全尺寸適用
+@media (max-width: 992px) {
+  .lh-base{
+    line-height: 1.5;
+  }
+}
+// 小尺寸適用
+@media (max-width: 992px) {
+  .lh-sm-base{
+    line-height: 1.5;
+  }
+}
+
+/////font-weight
+// 小尺寸適用
+@media (max-width: 992px) {
+  .fw-sm-bold{
+    font-weight: $font-weight-bold; //700
+  }
+}
+// 小尺寸適用
+@media (max-width: 992px) {
+  .fw-sm-medium{
+    font-weight: $font-weight-medium; //500
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}

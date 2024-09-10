@@ -10,9 +10,7 @@
     left: 0;
     z-index: 11;
   }
-}
 
-.section-Banner{
   .slide-title{
     padding: 32px 80px 32px 120px;
     border-radius: 0px 80px 0px 80px;
@@ -62,6 +60,7 @@
     z-index: 10;
 
       @media (max-width: 1199px) {
+        min-width: 343px;
         padding: 8px 24px 8px 8px;
 
         font-size: 14px;
@@ -100,11 +99,15 @@
 
 // 火熱募資課程
 .section-Course{
+  .profile{
+    width: 44px;
+    height: 44px;
+  }
   .card{
     max-width: 416px;
 
     @media (max-width: 992px) {
-      // max-width: 320px;
+      max-width: 320px;
     }
   }
 
@@ -122,12 +125,13 @@
 }
 
 // 看看大家都買了什麼
-.section-Topsales{
+.section-Topsales>.bg{
   background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
   z-index: -1;
-
+}
+.section-Topsales{
   .card{
-    // max-width: 416px;
+    max-width: 306px;
   }
 
   .card-img-top{
@@ -135,9 +139,37 @@
     height: 200px;
     object-fit: cover;
   }
+
+  .profile{
+    width: 32px;
+    height: 32px;
+  }
 }
 
+//想學什麼
+.section-Categories{
+  .w-category{
+    max-width: 306px;
+    box-shadow: 0px 25px 50px -12px #0000001F;
+
+    flex: 1;
+  
+    @media (max-width: 992px) {
+        max-width: 272px;
+    }
+  }
+}
+
+//師資
 .section-Teacher{
+  .bg {
+    background-image: url(../../assets/images/deco/line-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+  }
+
   .position-line{
     width: auto;
     height: 452px;
@@ -149,14 +181,16 @@
   }
   .card{
     max-width: 416px;
-  }
-  .teacherpic{
-    margin-left: 80px;
+
+    @media (max-width: 992px) {
+      max-width: 351px;
+    }
   }
   .card-img-top{
     width: auto;
     height: auto;
     object-fit: cover;
+    margin-left: 80px;
   }
   .card-body{
     margin-right: 32px;
