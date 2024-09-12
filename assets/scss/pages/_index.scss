@@ -122,14 +122,40 @@
       left: -100px;
     }
   }
+
+  /*讓card-shadow可以正常顯示 1007+24*/
+  .swiper{ 
+    min-height: 1031px;
+
+    @media (max-width: 992px) {
+      min-height: auto;
+    }
+  }
 }
 
 // 看看大家都買了什麼
-.section-Topsales>.bg{
-  background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
-  z-index: -1;
-}
 .section-Topsales{
+  .bg{
+    background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+    position: relative;
+    z-index: 0;
+  }
+  .bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/deco/flower-3.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    z-index: -1;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  
   .card{
     max-width: 306px;
   }
@@ -143,6 +169,16 @@
   .profile{
     width: 32px;
     height: 32px;
+  }
+
+  /*讓card-shadow可以正常顯示 */
+  .swiper{ 
+    min-height: 462px;
+  }
+  /*有設定初始樣式，因card-shadow調整高度*/
+  .swiper-button-prev-n,
+  .swiper-button-next-n {
+    top: 45%;
   }
 }
 
